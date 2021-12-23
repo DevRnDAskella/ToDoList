@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+:root {
+    --main-bg-color: #19647E;
+    --btn-bg-color: #f4d35e;
+    --color-font-main: #ee964b;
+    --title-fs: 'Josefin Sans', sans-serif;
+    --main-font-size: 1.5rem;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--color-font-main);
+    font-size: var(--main-font-size);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 2px 0;
+}
+
+li input {
+    flex-grow: 0;
+    margin-left: 14px;
+    cursor: pointer;
+    transform: scale(1.8);
+}
+
+li label {
+    flex-grow: 4;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+li .delete-btn {
+    flex-grow: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.material-icons-outlined {
+    font-family: "Material Icons", serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.wrapper-list {
+    width: 40%;
+}
+
+.title {
+    font: italic 6rem var(--title-fs);
+    border-bottom: .3rem solid;
+}
+
+.input {
+    display: flex;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#input-task {
+    padding: 0 1rem;
+    flex-grow: 4;
+    box-sizing: border-box;
+    border: 2px var(--main-bg-color) solid;
+    outline: none;
+    border-radius: .33rem;
+    transition: all .5s;
+}
+
+#input-task:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+#input-task::placeholder {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: .2;
+}
+
+#add-task-button {
+    flex-grow: 1;
+    background-color: var(--btn-bg-color);
+    height: 100%;
+    text-shadow: 1px 1px 2px pink;
+    border-radius: .33rem;
+}
+
+.delete-btn {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    font-size: 10px;
+    padding: 4px 4px;
+}
+
+.delete-btn span {
+    align-items: center;
+}
+
+#task-list {
+    padding: 0;
+    width: 100%;
+}
+
+.task--decoration {
+    text-decoration: line-through;
+    font-style: italic;
+}
